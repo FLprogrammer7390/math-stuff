@@ -1,6 +1,6 @@
 rng('shuffle');
 
-//P(X = xi) for X = 1, 2, 3, 4
+%P(X = xi) for X = 1, 2, 3, 4
 p = [0.2 0.15 0.25 0.4];
 
 maxrun = 100000000;
@@ -18,7 +18,7 @@ for i = 1:maxrun
   end
 end
 
-//Generates probability distribution
+%Generates probability distribution
 sum = 0;
 for i = 1:4
   sum = sum + distr(1, i);
